@@ -4,6 +4,7 @@
 #include "../Maps/Map.h"
 #include "./Huds/Hud.h"
 #include "./Objects/Npcs.h"
+#include "Objects/Enemies.h"
 #include "PlayGame.h"
 
 
@@ -14,6 +15,7 @@ PlayGame::PlayGame()
 	hud = new Hud();
 	map = new Map();
 	npcs = new Npcs();
+	enemies = new Enemies();
 	{//view projection
 		values = new SceneValues();
 		values->MainCamera = new Freedom();
@@ -33,6 +35,8 @@ PlayGame::~PlayGame()
 	
 	SAFE_DELETE(map);
 	SAFE_DELETE(player);
+	SAFE_DELETE(enemies);
+	SAFE_DELETE(npcs);
 	SAFE_DELETE(hud);
 
 	SAFE_DELETE(fontX);
@@ -65,6 +69,7 @@ void PlayGame::Update()
 		DivertTileBlacked();
 
 	{//Update
+		enemies->Update(View(), Projection());
 		sentence->Update(View(), Projection());
 		npcs->Update(View(), Projection());
 		fontX->Update(View(), Projection());
@@ -97,6 +102,15 @@ void PlayGame::Render()
 		fontX->Render(cameraPo.x + Width / 2 - GRID * SCALE*1.3, cameraPo.y + Height / 2 - GRID * SCALE / 2);
 		fontX->Render(cameraPo.x + Width / 2 - GRID * SCALE*1.3, cameraPo.y + Height / 2 - GRID * SCALE / 2 * 3);
 		player->StateRender();
+		if (bTemp)
+		{
+			enemies->Render(eGreenSlime, 2 * GRID*SCALE, 2 * GRID*SCALE);
+			enemies->Render(eBlueSlime, 1 * GRID*SCALE, 2 * GRID*SCALE);
+			enemies->Render(eGoldSlime, 3 * GRID*SCALE, 0 * GRID*SCALE);
+			enemies->Render(eFireSlime, 4 * GRID*SCALE, 2 * GRID*SCALE);
+			enemies->Render(eIceSlime, 1 * GRID*SCALE, 0 * GRID*SCALE);
+		}
+			
 		hud->Render();
 	}
 	ImGui::LabelText("playerX", "%d", player->Grid().x);
@@ -240,7 +254,7 @@ void PlayGame::ChangeMap(enum MapName mapName)
 	{
 		player->Location(D3DXVECTOR2(0, SCALE*GRID / 4));
 		player->Update(View(), Projection());
-		OpenComplete(L"tutorial.bin");
+		OpenBinaryFile(L"tutorial.bin");
 		bTemp = true;
 	}
 }
@@ -275,7 +289,7 @@ vector<GridInfo> PlayGame::FindCanClashWalls()
 	return selectWallInfos;
 }
 
-void PlayGame::OpenComplete(wstring name)
+void PlayGame::OpenBinaryFile(wstring name)
 {
 	tileInfos.clear();
 	wallInfos.clear();

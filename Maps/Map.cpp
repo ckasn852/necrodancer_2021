@@ -89,10 +89,10 @@ Map::Map()
 		Clip* clip;
 		{
 			clip = new Clip(PlayMode::Loop);
-			clip->AddFrame(new Sprite(wallSprite, shaderFile, 456, 288, 468, 310), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(wallSprite, shaderFile, 468, 288, 480, 310), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(wallSprite, shaderFile, 480, 288, 492, 310), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(wallSprite, shaderFile, 492, 288, 504, 310), ANIMATIONFRAME);
+			clip->AddFrame(new Sprite(wallSprite, shaderFile, 456, 288, 468, 310), ANIMFRAME);
+			clip->AddFrame(new Sprite(wallSprite, shaderFile, 468, 288, 480, 310), ANIMFRAME);
+			clip->AddFrame(new Sprite(wallSprite, shaderFile, 480, 288, 492, 310), ANIMFRAME);
+			clip->AddFrame(new Sprite(wallSprite, shaderFile, 492, 288, 504, 310), ANIMFRAME);
 			fires[0]->AddClip(clip);
 		}
 		fires[0]->Play(0);

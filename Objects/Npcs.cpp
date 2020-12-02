@@ -9,18 +9,18 @@ Npcs::Npcs()
 		wstring textureFile = CryptTextures + L"Npcs/Hephaestus.png";
 		{
 			clip = new Clip(PlayMode::Loop);
-			clip->AddFrame(new Sprite(textureFile, Shaders9, 0, 0, 65, 68), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, Shaders9, 65, 0, 130, 68), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, Shaders9, 130, 0, 195, 68), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, Shaders9, 195, 0, 260, 68), ANIMATIONFRAME);
+			clip->AddFrame(new Sprite(textureFile, Shaders9, 0, 0, 65, 68), ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, Shaders9, 65, 0, 130, 68), ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, Shaders9, 130, 0, 195, 68), ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, Shaders9, 195, 0, 260, 68), ANIMFRAME);
 			npcs[0]->AddClip(clip);
 		}
 		{
 			clip = new Clip(PlayMode::Loop);
-			clip->AddFrame(new Sprite(textureFile, Shaders9, 0, 68, 65, 136), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, Shaders9, 65, 68, 130, 136), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, Shaders9, 130, 68, 195, 136), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, Shaders9, 195, 68, 260, 136), ANIMATIONFRAME);
+			clip->AddFrame(new Sprite(textureFile, Shaders9, 0, 68, 65, 136), ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, Shaders9, 65, 68, 130, 136), ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, Shaders9, 130, 68, 195, 136), ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, Shaders9, 195, 68, 260, 136), ANIMFRAME);
 			npcs[0]->AddClip(clip);
 		}
 		npcs[0]->Position(-6 * SCALE*GRID, 7 * SCALE*GRID);
@@ -32,13 +32,13 @@ Npcs::Npcs()
 		{
 			clip = new Clip(PlayMode::Loop);
 			for(int i=0;i<4;i++)
-			clip->AddFrame(new Sprite(textureFile, Shaders9, 57*i, 0, 57*(i+1), 53), ANIMATIONFRAME);
+			clip->AddFrame(new Sprite(textureFile, Shaders9, 57*i, 0, 57*(i+1), 53), ANIMFRAME);
 			npcs[1]->AddClip(clip);
 		}
 		{
 			clip = new Clip(PlayMode::Loop);
 			for (int i = 0; i < 4; i++)
-				clip->AddFrame(new Sprite(textureFile, Shaders9, 57 * i, 53, 57 * (i + 1), 106), ANIMATIONFRAME);
+				clip->AddFrame(new Sprite(textureFile, Shaders9, 57 * i, 53, 57 * (i + 1), 106), ANIMFRAME);
 			npcs[1]->AddClip(clip);
 		}
 		npcs[1]->Position(0, 10 * SCALE*GRID);
@@ -50,13 +50,13 @@ Npcs::Npcs()
 		{
 			clip = new Clip(PlayMode::Loop);
 			for (int i = 0; i < 5; i++)
-				clip->AddFrame(new Sprite(textureFile, Shaders9, 32 * i, 0, 32 * (i + 1), 39), ANIMATIONFRAME);
+				clip->AddFrame(new Sprite(textureFile, Shaders9, 32 * i, 0, 32 * (i + 1), 39), ANIMFRAME);
 			npcs[2]->AddClip(clip);
 		}
 		{
 			clip = new Clip(PlayMode::Loop);
 			for (int i = 0; i < 5; i++)
-				clip->AddFrame(new Sprite(textureFile, Shaders9, 32 * i, 39, 32 * (i + 1), 78), ANIMATIONFRAME);
+				clip->AddFrame(new Sprite(textureFile, Shaders9, 32 * i, 39, 32 * (i + 1), 78), ANIMFRAME);
 			npcs[2]->AddClip(clip);
 		}
 		npcs[2]->Position(6 * SCALE*GRID, 7 * SCALE*GRID);
@@ -68,13 +68,13 @@ Npcs::Npcs()
 		{
 			clip = new Clip(PlayMode::Loop);
 			for (int i = 0; i < 4; i++)
-				clip->AddFrame(new Sprite(textureFile, Shaders9, 29 * i, 0, 29 * (i + 1), 27), ANIMATIONFRAME);
+				clip->AddFrame(new Sprite(textureFile, Shaders9, 29 * i, 0, 29 * (i + 1), 27), ANIMFRAME);
 			npcs[3]->AddClip(clip);
 		}
 		{
 			clip = new Clip(PlayMode::Loop);
 			for (int i = 0; i < 4; i++)
-				clip->AddFrame(new Sprite(textureFile, Shaders9, 29 * i, 27, 29 * (i + 1), 54), ANIMATIONFRAME);
+				clip->AddFrame(new Sprite(textureFile, Shaders9, 29 * i, 27, 29 * (i + 1), 54), ANIMFRAME);
 			npcs[3]->AddClip(clip);
 		}
 		npcs[3]->Position(-13 * SCALE*GRID, 1 * SCALE*GRID);
@@ -86,13 +86,13 @@ Npcs::Npcs()
 		{
 			clip = new Clip(PlayMode::Loop);
 			for (int i = 0; i < 9; i++)
-				clip->AddFrame(new Sprite(textureFile, Shaders9, 48 * i, 0, 48 * (i + 1), 34), ANIMATIONFRAME);
+				clip->AddFrame(new Sprite(textureFile, Shaders9, 48 * i, 0, 48 * (i + 1), 34), ANIMFRAME);
 			npcs[4]->AddClip(clip);
 		}
 		{
 			clip = new Clip(PlayMode::Loop);
 			for (int i = 0; i < 9; i++)
-				clip->AddFrame(new Sprite(textureFile, Shaders9, 48 * i, 34, 48 * (i + 1), 68), ANIMATIONFRAME);
+				clip->AddFrame(new Sprite(textureFile, Shaders9, 48 * i, 34, 48 * (i + 1), 68), ANIMFRAME);
 			npcs[4]->AddClip(clip);
 		}
 		npcs[4]->Position(-17 * SCALE*GRID, -5 * SCALE*GRID);

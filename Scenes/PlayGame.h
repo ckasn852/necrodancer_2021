@@ -12,13 +12,14 @@ public:
 	void Render()override;
 	void Camera(float x, float y);
 
-	void Start(wstring map) { OpenComplete(map); }
+	void Start(wstring map) { OpenBinaryFile(map); }
 private:
 	vector<struct GridInfo>tileInfos;
 	vector<struct GridInfo>wallInfos;
 	vector<struct GridInfo>eleInfos;//element Infomation
 	vector<struct GridInfo>fireInfos;
 	vector<struct GridInfo>sentenceInfos;
+
 
 	class Sentence* sentence;
 	D3DXVECTOR2 cameraPo;
@@ -45,8 +46,9 @@ private:
 	struct Map* map;
 	class Hud* hud;
 	class Npcs* npcs;
+	class Enemies* enemies;
 private:
-	void OpenComplete(wstring name);
+	void OpenBinaryFile(wstring name);
 
 private:
 	wstring shaderFile = Shaders + L"009_Sprite.fx";

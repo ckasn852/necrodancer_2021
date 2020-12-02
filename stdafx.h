@@ -2,7 +2,7 @@
 #define VERTICLE 16
 #define HORIZONTAL 16
 #define BEATFRAME 0.1f
-#define ANIMATIONFRAME BEATFRAME * 1.5
+#define ANIMFRAME BEATFRAME * 1.5
 #define UP 1
 #define DOWN 2
 #define LEFT 3

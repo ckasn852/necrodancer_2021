@@ -46,9 +46,9 @@ Weapon::Weapon()
 		{
 			effects[i] = new Animation();
 			clip = new Clip(PlayMode::End);
-			clip->AddFrame(new Sprite(effectSprite, Shaders9, 300, 20 + 23 * i, 313, 33 + 23 * i),ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(effectSprite, Shaders9, 325, 20 + 23 * i, 337, 33 + 23 * i), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(effectSprite, Shaders9, 342, 20 + 23 * i, 360, 33 + 23 * i), ANIMATIONFRAME);
+			clip->AddFrame(new Sprite(effectSprite, Shaders9, 300, 20 + 23 * i, 313, 33 + 23 * i),ANIMFRAME);
+			clip->AddFrame(new Sprite(effectSprite, Shaders9, 325, 20 + 23 * i, 337, 33 + 23 * i), ANIMFRAME);
+			clip->AddFrame(new Sprite(effectSprite, Shaders9, 342, 20 + 23 * i, 360, 33 + 23 * i), ANIMFRAME);
 			effects[i]->AddClip(clip);
 			effects[i]->Play(0);
 		}

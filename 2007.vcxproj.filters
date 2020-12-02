@@ -153,6 +153,24 @@
     <ClCompile Include="Objects\Enemies.cpp">
       <Filter>Objects</Filter>
     </ClCompile>
+    <ClCompile Include="Objects\Enemies\Enemy.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Enemies\Monsters\GreenSlime.cpp">
+      <Filter>Objects\Enemies\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Enemies\Monsters\BlueSlime.cpp">
+      <Filter>Objects\Enemies\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Enemies\Monsters\OrangeSlime.cpp">
+      <Filter>Objects\Enemies\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Enemies\Monsters\IceSlime.cpp">
+      <Filter>Objects\Enemies\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Enemies\Monsters\FireSlime.cpp">
+      <Filter>Objects\Enemies\Monsters</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Keyboard.h">
@@ -315,6 +333,24 @@
     <ClInclude Include="Objects\Enemies.h">
       <Filter>Objects</Filter>
     </ClInclude>
+    <ClInclude Include="Objects\Enemies\Enemy.h">
+      <Filter>Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Enemies\Monsters\GreenSlime.h">
+      <Filter>Objects\Enemies\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Enemies\Monsters\BlueSlime.h">
+      <Filter>Objects\Enemies\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Enemies\Monsters\OrangeSlime.h">
+      <Filter>Objects\Enemies\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Enemies\Monsters\IceSlime.h">
+      <Filter>Objects\Enemies\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Enemies\Monsters\FireSlime.h">
+      <Filter>Objects\Enemies\Monsters</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Systems">
@@ -355,6 +391,15 @@
     </Filter>
     <Filter Include="Objects\Enemies">
       <UniqueIdentifier>{dd74c26b-2778-4ff4-9034-70296687cc25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Enemies\Monsters">
+      <UniqueIdentifier>{dd4e6c5f-b05e-4d07-beb9-478dc1443792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Enemies\MiniBosses">
+      <UniqueIdentifier>{aa3b04bf-cc38-40aa-b8a9-3c5c64504495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Enemies\Bosses">
+      <UniqueIdentifier>{3c5982b7-717f-41c4-9b0f-bb8e62dfdf49}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

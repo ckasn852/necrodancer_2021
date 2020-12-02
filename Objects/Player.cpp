@@ -6,32 +6,32 @@ Player::Player()
 	playerStates = new PlayerStates();
 	wstring textureFile = CryptTextures + L"Cadence.png";
 	wstring shaderFile = Shaders + L"009_Sprite.fx";
+	Clip* clip;
 	{
 		head = new Animation();	
-		Clip* clip;
+		
 		{//Idle
 			clip = new Clip(PlayMode::Loop);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 4, 0, 18, 12), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 28, 0, 42, 12),ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 52, 0, 66, 12),ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 76, 0, 90, 12),ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 4, 24, 18, 36),ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 28, 24, 42, 36), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 52, 24, 66, 36), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 76, 24, 90, 36), ANIMATIONFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 4, 0, 18, 12), ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 28, 0, 42, 12),ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 52, 0, 66, 12),ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 76, 0, 90, 12),ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 4, 24, 18, 36),ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 28, 24, 42, 36), ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 52, 24, 66, 36), ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 76, 24, 90, 36), ANIMFRAME);
 			head->AddClip(clip);
 		}
 	}//Animation head
 
 	{
 		body = new Animation();
-		Clip* clip;
 		{//Idle
 			clip = new Clip(PlayMode::Loop);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 3, 57, 20, 71), ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 27, 57, 44, 71),ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 51, 57, 68, 71),ANIMATIONFRAME);
-			clip->AddFrame(new Sprite(textureFile, shaderFile, 75, 57, 92, 71),ANIMATIONFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 3, 57, 20, 71), ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 27, 57, 44, 71),ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 51, 57, 68, 71),ANIMFRAME);
+			clip->AddFrame(new Sprite(textureFile, shaderFile, 75, 57, 92, 71),ANIMFRAME);
 			body->AddClip(clip);
 		}
 	}//Animation body

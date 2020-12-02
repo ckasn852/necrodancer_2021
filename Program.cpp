@@ -28,7 +28,7 @@ void Update()
 	if (bPlay)
 	{
 		scene->Update();
-	}
+	}   
 	if (bEditor)
 	{
 		scene->Update();

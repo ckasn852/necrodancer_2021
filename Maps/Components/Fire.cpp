@@ -7,10 +7,10 @@ Fire::Fire()
 	Clip* clip;
 	{
 		clip = new Clip(PlayMode::Loop);
-		clip->AddFrame(new Sprite(wallSprite, Shaders9, 456, 288, 468, 310), ANIMATIONFRAME);
-		clip->AddFrame(new Sprite(wallSprite, Shaders9, 468, 288, 480, 310), ANIMATIONFRAME);
-		clip->AddFrame(new Sprite(wallSprite, Shaders9, 480, 288, 492, 310), ANIMATIONFRAME);
-		clip->AddFrame(new Sprite(wallSprite, Shaders9, 492, 288, 504, 310), ANIMATIONFRAME);
+		clip->AddFrame(new Sprite(wallSprite, Shaders9, 456, 288, 468, 310), ANIMFRAME);
+		clip->AddFrame(new Sprite(wallSprite, Shaders9, 468, 288, 480, 310), ANIMFRAME);
+		clip->AddFrame(new Sprite(wallSprite, Shaders9, 480, 288, 492, 310), ANIMFRAME);
+		clip->AddFrame(new Sprite(wallSprite, Shaders9, 492, 288, 504, 310), ANIMFRAME);
 		fire->AddClip(clip);
 	}
 	fire->Play(0);
