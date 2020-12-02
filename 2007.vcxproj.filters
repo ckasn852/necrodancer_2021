@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Systems\Keyboard.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Renders\Shader.cpp">
+      <Filter>Renders</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\BinaryFile.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Math.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Path.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\String.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\Time.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\Device.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Renders\Clip.cpp">
+      <Filter>Renders</Filter>
+    </ClCompile>
+    <ClCompile Include="Renders\Sprite.cpp">
+      <Filter>Renders</Filter>
+    </ClCompile>
+    <ClCompile Include="Renders\Animation.cpp">
+      <Filter>Renders</Filter>
+    </ClCompile>
+    <ClCompile Include="Viewer\Camera.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="Viewer\Following.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="Viewer\Freedom.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\DirectWrite.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Systems\Cmouse.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Player.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Location.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Maps\Map.cpp">
+      <Filter>Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\PlayGame.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Editor.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Object.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\Item.cpp">
+      <Filter>Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Npcs.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Huds\Hud.cpp">
+      <Filter>Scenes\Huds</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Huds\BeatHeart.cpp">
+      <Filter>Scenes\Huds</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\PlayerStates\Hearts.cpp">
+      <Filter>Objects\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\PlayerStates\Resources.cpp">
+      <Filter>Objects\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\PlayerStates\PlayerStates.cpp">
+      <Filter>Objects\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\PlayerStates\Resources\Diamonds.cpp">
+      <Filter>Objects\PlayerStates\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\PlayerStates\Resources\Coins.cpp">
+      <Filter>Objects\PlayerStates\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Word.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Huds\Beat.cpp">
+      <Filter>Scenes\Huds</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\PlayerStates\PlayerItems.cpp">
+      <Filter>Objects\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\Shovel.cpp">
+      <Filter>Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\Footwear.cpp">
+      <Filter>Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\Headwears.cpp">
+      <Filter>Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\Weapon.cpp">
+      <Filter>Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\Armor.cpp">
+      <Filter>Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\Torch.cpp">
+      <Filter>Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\Ring.cpp">
+      <Filter>Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\Consumable.cpp">
+      <Filter>Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Maps\Components\Tile.cpp">
+      <Filter>Maps\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Maps\Components\Wall.cpp">
+      <Filter>Maps\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Maps\Components\Element.cpp">
+      <Filter>Maps\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Maps\Components\Fire.cpp">
+      <Filter>Maps\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Sentence.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Enemies\Monsters.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Enemies\MiniBosses.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Enemies.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Systems\Keyboard.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Renders\Shader.h">
+      <Filter>Renders</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\BinaryFile.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Math.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Path.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\String.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\Time.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\Device.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Renders\Clip.h">
+      <Filter>Renders</Filter>
+    </ClInclude>
+    <ClInclude Include="Renders\Sprite.h">
+      <Filter>Renders</Filter>
+    </ClInclude>
+    <ClInclude Include="Renders\Animation.h">
+      <Filter>Renders</Filter>
+    </ClInclude>
+    <ClInclude Include="Viewer\Camera.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="Viewer\Following.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="Viewer\IFollowing.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="Viewer\Freedom.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\DirectWrite.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\Cmouse.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Maps\Map.h">
+      <Filter>Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Player.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Location.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\PlayGame.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Editor.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Scene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Object.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Item.h">
+      <Filter>Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Npcs.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Huds\Hud.h">
+      <Filter>Scenes\Huds</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Huds\BeatHeart.h">
+      <Filter>Scenes\Huds</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\PlayerStates\Hearts.h">
+      <Filter>Objects\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\PlayerStates\Resources.h">
+      <Filter>Objects\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\PlayerStates\PlayerStates.h">
+      <Filter>Objects\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\PlayerStates\Resources\Diamonds.h">
+      <Filter>Objects\PlayerStates\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\PlayerStates\Resources\Coins.h">
+      <Filter>Objects\PlayerStates\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Word.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Huds\Beat.h">
+      <Filter>Scenes\Huds</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\PlayerStates\PlayerItems.h">
+      <Filter>Objects\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Shovel.h">
+      <Filter>Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Footwear.h">
+      <Filter>Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Weapon.h">
+      <Filter>Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Armor.h">
+      <Filter>Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Torch.h">
+      <Filter>Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Ring.h">
+      <Filter>Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Consumable.h">
+      <Filter>Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Headwears.h">
+      <Filter>Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Maps\Components\Tile.h">
+      <Filter>Maps\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Maps\Components\Wall.h">
+      <Filter>Maps\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Maps\Components\Element.h">
+      <Filter>Maps\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Maps\Components\Fire.h">
+      <Filter>Maps\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Sentence.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Maps\Components.h">
+      <Filter>Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Enemies\Monsters.h">
+      <Filter>Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Enemies\MiniBosses.h">
+      <Filter>Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Enemies.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{5ef6580a-13ba-4ea1-9ed1-8bc78761e547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renders">
+      <UniqueIdentifier>{7b8039ac-5a6f-4e3b-b80d-1e5d4676d5a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{4215755e-4e5a-4279-9ba1-a8ad28948274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{a8af6ade-175a-40f2-a38d-39bcc622ba4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Viewer">
+      <UniqueIdentifier>{83d82e58-b8e1-4241-99db-caf39e8a48e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{64327786-d4aa-4681-a100-e27bddb66b4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Maps">
+      <UniqueIdentifier>{e3743934-b37a-4038-8b97-c039c69ca069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Items">
+      <UniqueIdentifier>{4c13e270-f8f7-43c6-ab2d-1125a2716da1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Huds">
+      <UniqueIdentifier>{eb45cde6-2bef-43c4-8ce3-745b0fa92fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\PlayerStates">
+      <UniqueIdentifier>{ac35f694-b4ab-4751-8d23-0ca7fefc5f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\PlayerStates\Resources">
+      <UniqueIdentifier>{897874a6-3f14-41f1-abd2-5347a0b1f97c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Maps\Components">
+      <UniqueIdentifier>{a7a6b6ae-5839-43cc-9dd7-a8e445a9e529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Enemies">
+      <UniqueIdentifier>{dd74c26b-2778-4ff4-9034-70296687cc25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Utilities\Xml.h">
+      <Filter>Utilities</Filter>
+    </None>
+    <None Include="Utilities\Xml.cpp">
+      <Filter>Utilities</Filter>
+    </None>
+  </ItemGroup>
+</Project>
