@@ -6,6 +6,6 @@
 
 ### Audio API: FMOD
 
-### Programming Language: C++
+### Programming Language: C/C++
 
 ### IDE/Tools: Visual Studio
